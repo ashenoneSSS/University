@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1714032797 source:c:\users\admin\desktop\c++ projects\24_04_17_lab3_binary-tree\main.cpp
+	<iostream>
+	<stack>
+	<string>
+	<cmath>
+	<map>
+	<sstream>
+	<cctype>
+

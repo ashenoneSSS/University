@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1709192705 source:c:\users\admin\desktop\c++ projects\24_02_21_lab1_try1\main.cpp
+	<iostream>
+	<cstdio>
+	<conio.h>
+	<cstdlib>
+	<cstring>
+
+1709192705 source:c:\users\admin\desktop\c++ projects\24_02_21_lab1_database\main.cpp
+	<iostream>
+	<cstdio>
+	<conio.h>
+	<cstdlib>
+	<cstring>
+
