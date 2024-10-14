@@ -1,0 +1,47 @@
+﻿  main.cpp
+C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\sorting.h(131,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+      C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\sorting.h(131,15):
+      the template instantiation context (the oldest one first) is
+          C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\main.cpp(91,27):
+          see reference to class template instantiation 'InsS<int>' being compiled
+          C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\sorting.h(129,10):
+          while compiling class template member function 'void InsS<int>::sortData(std::vector<T,std::allocator<T>> &)'
+          with
+          [
+              T=int
+          ]
+              C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\main.cpp(92,32):
+              see the first reference to 'InsS<int>::sortData' in 'main'
+  
+C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\sorting.h(120,40): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+      C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\sorting.h(120,40):
+      the template instantiation context (the oldest one first) is
+          C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\main.cpp(84,27):
+          see reference to class template instantiation 'MrgS<int>' being compiled
+          C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\sorting.h(118,10):
+          while compiling class template member function 'void MrgS<int>::sortData(std::vector<T,std::allocator<T>> &)'
+          with
+          [
+              T=int
+          ]
+              C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\main.cpp(85,31):
+              see the first reference to 'MrgS<int>::sortData' in 'main'
+  
+C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\sorting.h(48,40): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+      C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\sorting.h(48,40):
+      the template instantiation context (the oldest one first) is
+          C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\main.cpp(77,27):
+          see reference to class template instantiation 'QckS<int>' being compiled
+          C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\sorting.h(46,10):
+          while compiling class template member function 'void QckS<int>::sortData(std::vector<T,std::allocator<T>> &)'
+          with
+          [
+              T=int
+          ]
+              C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\24_10_11_lab1_Linked-list_Probability-theory\main.cpp(78,31):
+              see the first reference to 'QckS<int>::sortData' in 'main'
+  
+  24_10_11_lab1_Linked-list_Probability-theory.vcxproj -> C:\Users\ne_kazual\Desktop\University\sem_3\24_10_11_lab1_Linked-list_Probability-theory\x64\Debug\24_10_11_lab1_Linked-list_Probability-theory.exe
