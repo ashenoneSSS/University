@@ -1,0 +1,114 @@
+MatrixCore:
+Matrix – клас-контейнер двійкової матриці:
+
+Rows – кількість рядків (int, readonly)
+
+Cols – кількість стовпців (int, readonly)
+
+Data – фактичні дані double[,]
+
+this[int r,int c] – індексатор доступу до елемента
+
+Identity(int n) – статичний метод створення одиничної матриці Iₙ
+
+Clone() – глибока копія матриці
+
+ToString() – текстове табличне представлення
+
+
+
+IMatrixOperation – інтерфейс «алгоритм опрацювання матриць»:
+
+ExecuteAsync(Matrix a, Matrix b = null, CancellationToken) → Task<Matrix> – запускає обчислення асинхронно
+
+
+
+MatrixMultiplier – реалізація множення A × B:
+
+Перевірка a.Cols == b.Rows
+
+Три вкладені цикли → результат a.Rows × b.Cols
+
+
+
+DeterminantCalculator – обчислює детермінант квадратної матриці:
+
+Рекурсивний розклад по першому рядку
+
+Повертає 1 × 1-матрицю з числом det
+
+
+
+MatrixInverter – обчислює обернену матрицю (метод Гаусса-Жордана):
+
+Формує розширену [A | I], перетворює до [I | A⁻¹]
+
+MatrixOperationFactory – фабрика створення алгоритмів:
+
+Create(string opName) – повертає MatrixMultiplier, DeterminantCalculator або MatrixInverter
+
+
+
+
+
+
+
+
+
+
+
+Form1.cs (WinForms UI):
+Form1 – головна форма програми:
+
+_cts – поточне CancellationTokenSource для скасування задач
+
+
+
+Події та методи:
+
+Form1_Load – заповнює cmbOp («Multiply / Determinant / Inverse»), обирає «Multiply»
+
+cmbOp_SelectedIndexChanged – вмикає/ховає gridB залежно від операції
+
+btnGenerate_Click – будує порожні DataGridView під вибрані розміри
+
+ConfigureGrid(grid,rows,cols) – скидає колонки, задає ширину, рядки, вимикає автододавання
+
+
+btnStart_Click:
+
+блокує UI (ToggleUi(false)), вмикає маркер прогресу
+
+читає матриці A і (опційно) B
+
+через MatrixOperationFactory створює потрібний алгоритм
+
+асинхронно виконує ExecuteAsync, відловлює помилки або скасування
+
+показує результат у gridResult, розблоковує UI
+
+ReadMatrix(grid) – перетворює дані з DataGridView у об’єкт Matrix
+
+ShowResult(Matrix) – малює результат (1×1 або довільний розмір)
+
+ToggleUi(bool) – одним викликом вмикає/вимикає усі керуючі елементи форми
+
+
+
+GUI-контролі:
+
+numRows / numCols – NumericUpDown для розміру матриць
+
+gridA – DataGridView введення матриці A
+
+gridB – DataGridView введення матриці B (лише для множення)
+
+gridResult – DataGridView показ результату
+
+cmbOp – ComboBox вибору операції
+
+btnGenerate – кнопка «Generate» (створити таблиці)
+
+btnStart – кнопка «Start» (почати обчислення)
+
+prog – ProgressBar індикації виконання

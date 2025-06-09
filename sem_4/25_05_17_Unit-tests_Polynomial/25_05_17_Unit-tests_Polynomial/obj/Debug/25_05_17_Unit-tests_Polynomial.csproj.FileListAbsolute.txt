@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\source\repos\25_05_17_Unit-tests_Polynomial\25_05_17_Unit-tests_Polynomial\bin\Debug\25_05_17_Unit-tests_Polynomial.exe.config
+C:\Users\ne_kazual\source\repos\25_05_17_Unit-tests_Polynomial\25_05_17_Unit-tests_Polynomial\bin\Debug\25_05_17_Unit-tests_Polynomial.exe
+C:\Users\ne_kazual\source\repos\25_05_17_Unit-tests_Polynomial\25_05_17_Unit-tests_Polynomial\bin\Debug\25_05_17_Unit-tests_Polynomial.pdb
+C:\Users\ne_kazual\source\repos\25_05_17_Unit-tests_Polynomial\25_05_17_Unit-tests_Polynomial\obj\Debug\25_05_17_Unit-tests_Polynomial.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\source\repos\25_05_17_Unit-tests_Polynomial\25_05_17_Unit-tests_Polynomial\obj\Debug\25_05_17_Unit-tests_Polynomial.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\source\repos\25_05_17_Unit-tests_Polynomial\25_05_17_Unit-tests_Polynomial\obj\Debug\25_05_17_Unit-tests_Polynomial.exe
+C:\Users\ne_kazual\source\repos\25_05_17_Unit-tests_Polynomial\25_05_17_Unit-tests_Polynomial\obj\Debug\25_05_17_Unit-tests_Polynomial.pdb

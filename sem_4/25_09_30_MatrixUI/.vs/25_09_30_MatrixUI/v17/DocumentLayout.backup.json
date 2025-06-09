@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_09_30_MatrixUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22033D3F-CDBB-4EB1-8C2A-CE03921B2B42}|25_09_30_MatrixUI\\25_09_30_MatrixUI.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_4\\25_09_30_matrixui\\25_09_30_matrixui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22033D3F-CDBB-4EB1-8C2A-CE03921B2B42}|25_09_30_MatrixUI\\25_09_30_MatrixUI.csproj|solutionrelative:25_09_30_matrixui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E79136C-9A96-4D27-AECD-6EB53AA35BC6}|MatrixCore\\MatrixCore.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_4\\25_09_30_matrixui\\matrixcore\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E79136C-9A96-4D27-AECD-6EB53AA35BC6}|MatrixCore\\MatrixCore.csproj|solutionrelative:matrixcore\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22033D3F-CDBB-4EB1-8C2A-CE03921B2B42}|25_09_30_MatrixUI\\25_09_30_MatrixUI.csproj|C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_09_30_MatrixUI\\25_09_30_matrixui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22033D3F-CDBB-4EB1-8C2A-CE03921B2B42}|25_09_30_MatrixUI\\25_09_30_MatrixUI.csproj|solutionrelative:25_09_30_matrixui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_09_30_MatrixUI\\25_09_30_MatrixUI\\Form1.cs",
+              "RelativeDocumentMoniker": "25_09_30_MatrixUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_09_30_MatrixUI\\25_09_30_MatrixUI\\Form1.cs",
+              "RelativeToolTip": "25_09_30_MatrixUI\\Form1.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAawB8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:28:40.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_09_30_MatrixUI\\MatrixCore\\Class1.cs",
+              "RelativeDocumentMoniker": "MatrixCore\\Class1.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_09_30_MatrixUI\\MatrixCore\\Class1.cs",
+              "RelativeToolTip": "MatrixCore\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T14:33:45.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_09_30_MatrixUI\\25_09_30_MatrixUI\\Form1.cs",
+              "RelativeDocumentMoniker": "25_09_30_MatrixUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_09_30_MatrixUI\\25_09_30_MatrixUI\\Form1.cs [Design]",
+              "RelativeToolTip": "25_09_30_MatrixUI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T14:31:01.031Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

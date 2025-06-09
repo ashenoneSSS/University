@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_05_17_Unit-tests_Polynomial\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2E298DA-C014-400D-8585-0F2CB6F0FD96}|25_05_17_Unit-tests_Polynomial\\25_05_17_Unit-tests_Polynomial.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_4\\25_05_17_unit-tests_polynomial\\25_05_17_unit-tests_polynomial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2E298DA-C014-400D-8585-0F2CB6F0FD96}|25_05_17_Unit-tests_Polynomial\\25_05_17_Unit-tests_Polynomial.csproj|solutionrelative:25_05_17_unit-tests_polynomial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C96ABF3B-AB7B-4C1B-8006-E7E433A38B60}|PolynomialTests\\PolynomialTests.csproj|C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_05_17_Unit-tests_Polynomial\\polynomialtests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C96ABF3B-AB7B-4C1B-8006-E7E433A38B60}|PolynomialTests\\PolynomialTests.csproj|solutionrelative:polynomialtests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_05_17_Unit-tests_Polynomial\\PolynomialTests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "PolynomialTests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_05_17_Unit-tests_Polynomial\\PolynomialTests\\UnitTest1.cs",
+              "RelativeToolTip": "PolynomialTests\\UnitTest1.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T11:42:38.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_05_17_Unit-tests_Polynomial\\25_05_17_Unit-tests_Polynomial\\Program.cs",
+              "RelativeDocumentMoniker": "25_05_17_Unit-tests_Polynomial\\Program.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_4\\25_05_17_Unit-tests_Polynomial\\25_05_17_Unit-tests_Polynomial\\Program.cs",
+              "RelativeToolTip": "25_05_17_Unit-tests_Polynomial\\Program.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAowKMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T11:06:17.267Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

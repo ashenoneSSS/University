@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "25_09_30_MatrixUI", "25_09_30_MatrixUI\25_09_30_MatrixUI.csproj", "{22033D3F-CDBB-4EB1-8C2A-CE03921B2B42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatrixCore", "MatrixCore\MatrixCore.csproj", "{1E79136C-9A96-4D27-AECD-6EB53AA35BC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22033D3F-CDBB-4EB1-8C2A-CE03921B2B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22033D3F-CDBB-4EB1-8C2A-CE03921B2B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22033D3F-CDBB-4EB1-8C2A-CE03921B2B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22033D3F-CDBB-4EB1-8C2A-CE03921B2B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E79136C-9A96-4D27-AECD-6EB53AA35BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E79136C-9A96-4D27-AECD-6EB53AA35BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E79136C-9A96-4D27-AECD-6EB53AA35BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E79136C-9A96-4D27-AECD-6EB53AA35BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D408814D-225D-4D6A-A062-13605FD300FB}
+	EndGlobalSection
+EndGlobal

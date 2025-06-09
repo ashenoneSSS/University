@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "25_09_30_MatrixUI/1.0.0": {
+        "dependencies": {
+          "MatrixCore": "1.0.0"
+        },
+        "runtime": {
+          "25_09_30_MatrixUI.dll": {}
+        }
+      },
+      "MatrixCore/1.0.0": {
+        "runtime": {
+          "MatrixCore.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "25_09_30_MatrixUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MatrixCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
