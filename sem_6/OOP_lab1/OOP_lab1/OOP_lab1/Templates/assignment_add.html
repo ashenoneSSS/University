@@ -1,0 +1,16 @@
+<h3>Add assignment</h3>
+<form method="post" action="/patients/{{patient_id}}/assignments/add">
+  <div>
+    <label>Type</label>
+    <select name="type">
+      <option value="procedure">procedure</option>
+      <option value="medicine">medicine</option>
+      <option value="operation">operation</option>
+    </select>
+  </div>
+  <div>
+    <label>Title</label>
+    <input name="title" />
+  </div>
+  <button type="submit">Add</button>
+</form>

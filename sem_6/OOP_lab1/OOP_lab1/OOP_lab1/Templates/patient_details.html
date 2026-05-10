@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patient</title>
+</head>
+<body>
+  <a href="/patients">Back to list</a>
+  <h1>{{full_name}}</h1>
+  <div>Date of birth: {{birth_date}}</div>
+  <div>Diagnosis: {{diagnosis}}</div>
+  <div>Discharged: {{discharged}}</div>
+  <div>Final diagnosis: {{final_diagnosis}}</div>
+  <div>{{doctor_actions}}</div>
+
+  <h2>Assignments</h2>
+  <ul>
+    {{assignments}}
+  </ul>
+
+  <div>{{assignment_add_form}}</div>
+  <div>{{discharge_form}}</div>
+</body>
+</html>

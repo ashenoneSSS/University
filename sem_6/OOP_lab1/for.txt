@@ -1,0 +1,186 @@
+1) Что это за проект (цель и рамки)
+Это минимальный ASP.NET Core “Empty” лабораторный проект Hospital-system для университета. Реализовано ровно то, что нужно для сдачи: без EF, без ORM, без ASP.NET MVC, без Razor Pages, без Identity, без built-in auth/authorization middleware, без attribute routing / MVC routing, без “чистой архитектуры”, репозиториев, MediatR и т.д. В коде комментариев нет (по требованию заказчика).
+
+Стек
+
+ASP.NET Core (в проекте целевой фреймворк net9.0).
+MSSQL (в конфиге по умолчанию LocalDB через (localdb)\MSSQLLocalDB).
+ADO.NET через Microsoft.Data.SqlClient.
+HTML-шаблоны как обычные файлы в папке Templates + замена плейсхолдеров {{key}}.
+xUnit минимальные тесты в отдельном проекте OOP_lab1.Tests.
+Жёсткие ограничения, которых придерживаться дальше
+
+Никакого Entity Framework / Dapper как ORM и вообще ORM.
+Никаких ControllerBase / [ApiController] / MapControllers и прочего “настоящего” MVC.
+Никакого Razor.
+Никакой ASP.NET Identity / UseAuthentication с cookie auth провайдером.
+Роутинг только свой (таблица маршрутов), не атрибуты.
+DAO + ручной SQL, только параметризованные запросы.
+Сессия вручную: хранилище в памяти + cookie sid.
+2) Как устроен HTTP-пайплайн (самое важное для понимания)
+Один вход в Program.cs: используется делегат для всего приложения (app.Run(async http => { ... })), внутри вызывается FrontController.Handle.
+
+Порядок обработки запроса:
+
+Program.cs регистрирует singleton-сервисы и наполняет Router списком пар (HTTP method, path template) → handler.
+На каждый запрос вызывается FrontController.Handle(HttpContext).
+FrontController:
+Смотрит путь и метод.
+Если пользователь не залогинен (нет валидной cookie-сессии), и путь не публичный, делает 302 на /login.
+Публичные пути сейчас: /, /login, /register (см. FrontController).
+Ищет обработчик в Router.Match(method, path).
+Создаёт RequestContext: HttpContext + словарь параметров маршрута (например id) + SessionData (если есть).
+Вызывает handler контроллера (обычный async-метод).
+Важно: это “MVC-подобная структура”, но не ASP.NET MVC. Классы в папке Controllers/ — это ваши классы с методами-обработчиками, не framework controllers.
+
+3) Роутинг: Router и таблица маршрутов
+Файл: Http/Router.cs.
+
+Маршруты добавляются в Program.cs строками вида router.Add("GET", "/patients/{id}", patients.Details).
+Поддерживаются сегментные параметры {id}.
+Router возвращает RouteMatch: словарь RouteValues и delegate handler.
+Где смотреть полный список маршрутов: Program.cs (ниже по файлу, после var router = ...).
+
+Типовые маршруты (по смыслу, точные строки — в коде):
+
+/ — стартовая: если есть сессия → редирект на /patients, если нет → HTML index.html (Sign in / Register).
+Auth: GET/POST /login, POST /logout, GET/POST /register.
+Patients: /patients, create/edit/delete/details, discharge.
+Assignments: добавление к пациенту, завершение по id.
+4) Сессия и “логин”
+Файл: Sessions/SessionManager.cs.
+
+Механика:
+
+Cookie имя: sid (значение — строка session id).
+На сервере (в памяти процесса) словарь sessionId → SessionData.
+При логине успешном: создаётся запись + cookie.
+При logout: удаляется из словаря + cookie delete.
+Модель сессии: Models/SessionData.cs — обычно SessionId, UserId, Role.
+
+Ограничение: при переносе на другой комп / перезапуске приложения сессии в памяти сбрасываются (это нормально для лабы).
+
+5) База данных
+Схема (ровно 3 таблицы по ТЗ)
+Скрипт: sql/schema_and_seed.sql.
+
+dbo.users: id, login (unique), password (plain text в рамках минимализма лабы), role (Doctor / Nurse и т.п.).
+dbo.patients: full_name, birth_date, diagnosis, is_discharged, final_diagnosis, …
+dbo.assignments: связь с пациентом, type строкой (procedure/medicine/operation), title, флаги выполнения, кто создал/кто завершил, completed_at.
+Скрипт дропает и пересоздаёт таблицы при генерации с нуля (для разработки удобно, но снесёт данные при повторном запуске).
+
+Connection string
+Файл: appsettings.json, ключ ConnectionStrings:HospitalDb.
+
+По умолчанию что-то вроде:
+
+Server=(localdb)\MSSQLLocalDB;Database=HospitalLabDb;Trusted_Connection=True;TrustServerCertificate=True
+На новом ПК:
+
+Установить SQL Server Express LocalDB или подставить свой инстанс.
+Если не LocalDB — поменять Server=... в connection string.
+Обязательно один раз применить sql/schema_and_seed.sql к нужному инстансу.
+Как применять скрипт (типично Windows)
+Из папки, где лежит sql/schema_and_seed.sql:
+
+sqlcmd -S "(localdb)\MSSQLLocalDB" -E -i sql\schema_and_seed.sql
+Критический подводный камень с кириллицей в SQL-файле + sqlcmd
+
+Если в .sql есть кириллица, sqlcmd может испортить кодировку, и в БД появится mojibake вроде РџРµ… при отображении в браузере.
+В этой версии проекта сид-строки переведены на ASCII/English, чтобы sqlcmd не ломал данные.
+Если пользователь захочет русские сиды: безопаснее грузить через SSMS с UTF‑8, либо настраивать кодировку запуска sqlcmd (зависит от версии; надёжнее SSMS).
+Типичная ошибка переноса
+SqlException 4060: “Cannot open database HospitalLabDb” — база не создана на том SQL Server, куда смотрит connection string. Решение: выполнить schema_and_seed.sql на тот же инстанс, что в строке подключения.
+
+6) Слой данных: DAO
+Data/DbConnectionFactory.cs
+
+Читает connection string из конфигурации.
+CreateOpen() создаёт SqlConnection и Open().
+Data/UserDao.cs
+
+FindByLogin, GetById, Create (регистрация).
+Data/PatientDao.cs
+
+Список, получение, create/update/delete, discharge update.
+Data/AssignmentDao.cs
+
+Чтение назначений, создание, завершение, проверка незавершённых.
+Все SQL должны быть параметризованы (как сейчас).
+
+7) Бизнес-логика (роли, выписка, назначения)
+Файл: Services/RoleRules.cs
+
+Doctor может выполнять любое назначение.
+Nurse может выполнять только procedure и medicine, не operation.
+Назначения добавляет только Doctor (по коду контроллеров).
+
+Файл: Services/DischargeService.cs
+
+Выписка требует final diagnosis не пустой.
+Нельзя выписать, пока есть незавершённые assignments (через AssignmentDao.AnyOpenByPatient).
+Выписка только Doctor.
+Файл: Services/AuthService.cs
+
+Проверка логина/пароля с DAO.
+Файл: Services/SqlErrorMessages.cs
+
+Унификация сообщений об ошибках SQL для UI + различие duplicate key vs “нет базы”.
+8) UI: Templates
+Папка Templates/ содержит plain HTML. Http/TemplateRenderer.cs делает {{placeholder}} replace.
+
+Сейчас интерфейс на английском (по запросу пользователя): login.html, register.html, patients_list.html, patient_form.html, patient_details.html, assignment_add.html, discharge_form.html, index.html.
+
+9) “Контроллеры” (ваши классы)
+Файлы в Controllers/ — не framework MVC.
+
+AuthController: login/register/logout, HTML ответы, cookie session create/destroy.
+PatientsController: patient CRUD, details (embeds assignments UI), discharge POST.
+AssignmentsController: add assignment to patient, complete assignment с проверками роли/состояния пациента.
+Важно: часть UI собирается строками в PatientsController (кнопки Complete / Edit / Delete) — это сознательно минимально.
+
+10) Тесты
+Проект: OOP_lab1.Tests (xUnit).
+
+Минимальные тесты (как требовал ТЗ):
+
+разрешение маршрута Router
+логика AuthService.IsValid (вынесенный static helper)
+правила nurse/doctor
+логика DischargeService.CanDischarge
+Запуск:
+
+dotnet test
+11) Запуск на новом компьютере (чеклист)
+Установить .NET SDK (желательно совместимый с net9.0, проект таргетит net9).
+Установить LocalDB (если оставляете строку подключения как в appsettings.json) или поставить полноценный SQL Server и поправить connection string.
+Выполнить sql/schema_and_seed.sql на нужном инстансе.
+dotnet restore / dotnet build.
+Запуск из IDE или:
+dotnet run --project OOP_lab1/OOP_lab1.csproj
+Открыть URL из консоли (https/http порты задаются Properties/launchSettings.json).
+Если нужно автооткрытие браузера: launchBrowser: true в launchSettings.json.
+12) Учётные записи по умолчанию (после сидов)
+В SQL сидятся, как минимум:
+
+doctor / doctor роль Doctor
+nurse / nurse роль Nurse
+(Точные значения — в INSERT в schema_and_seed.sql.)
+
+Также есть регистрация /register, создаёт пользователя в users.
+
+13) Что НЕ трогать без необходимости (чтобы не нарушить ТЗ)
+Не подключать EF, не превращать Controllers в ASP.NET MVC controllers.
+Не добавлять Razor.
+Не включать Identity/cookie authentication middleware “по стандарту ASP.NET”.
+Не усложнять архитектуру (CQRS, UoW, generic repo и т.д.).
+14) Полезные пути в репозитории (ориентир)
+Корень решения обычно:
+
+.../sem_6/OOP_lab1/OOP_lab1/OOP_lab1.sln
+Основной веб-проект:
+
+OOP_lab1/OOP_lab1/OOP_lab1.csproj
+Главная точка входа:
+
+OOP_lab1/Program.cs

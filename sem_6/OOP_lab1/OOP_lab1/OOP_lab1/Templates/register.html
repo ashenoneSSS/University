@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register</title>
+</head>
+<body>
+  <a href="/">Home</a> | <a href="/login">Sign in</a>
+  <h1>Register</h1>
+  <div style="color: #b00020">{{error}}</div>
+  <form method="post" action="/register">
+    <div>
+      <label>Login</label>
+      <input name="login" />
+    </div>
+    <div>
+      <label>Password</label>
+      <input name="password" type="password" />
+    </div>
+    <div>
+      <label>Role</label>
+      <select name="role">
+        <option value="Doctor">Doctor</option>
+        <option value="Nurse">Nurse</option>
+      </select>
+    </div>
+    <button type="submit">Create user</button>
+  </form>
+</body>
+</html>

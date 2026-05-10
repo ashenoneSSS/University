@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+</head>
+<body>
+  <a href="/patients">Back</a>
+  <h1>{{title}}</h1>
+  <form method="post" action="{{action}}">
+    <div>
+      <label>Full name</label>
+      <input name="full_name" value="{{full_name}}" />
+    </div>
+    <div>
+      <label>Date of birth</label>
+      <input name="birth_date" type="date" value="{{birth_date}}" />
+    </div>
+    <div>
+      <label>Diagnosis</label>
+      <input name="diagnosis" value="{{diagnosis}}" />
+    </div>
+    <button type="submit">{{submit}}</button>
+  </form>
+</body>
+</html>
