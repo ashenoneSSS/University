@@ -1,0 +1,7 @@
+C:\Users\ne_kazual\Desktop\University\sem_6\Crypto_lab2\Crypto_lab2\Crypto_lab2\bin\Debug\Crypto_lab2.exe.config
+C:\Users\ne_kazual\Desktop\University\sem_6\Crypto_lab2\Crypto_lab2\Crypto_lab2\bin\Debug\Crypto_lab2.exe
+C:\Users\ne_kazual\Desktop\University\sem_6\Crypto_lab2\Crypto_lab2\Crypto_lab2\bin\Debug\Crypto_lab2.pdb
+C:\Users\ne_kazual\Desktop\University\sem_6\Crypto_lab2\Crypto_lab2\Crypto_lab2\obj\Debug\Crypto_lab2.csproj.AssemblyReference.cache
+C:\Users\ne_kazual\Desktop\University\sem_6\Crypto_lab2\Crypto_lab2\Crypto_lab2\obj\Debug\Crypto_lab2.csproj.CoreCompileInputs.cache
+C:\Users\ne_kazual\Desktop\University\sem_6\Crypto_lab2\Crypto_lab2\Crypto_lab2\obj\Debug\Crypto_lab2.exe
+C:\Users\ne_kazual\Desktop\University\sem_6\Crypto_lab2\Crypto_lab2\Crypto_lab2\obj\Debug\Crypto_lab2.pdb
