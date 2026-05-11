@@ -94,14 +94,14 @@ public sealed class AuthController
             return;
         }
 
-        if (_users.FindByLogin(login) is not null)
-        {
-            await RenderRegisterError(ctx, "This login is already taken.");
-            return;
-        }
-
         try
         {
+            if (_users.FindByLogin(login) is not null)
+            {
+                await RenderRegisterError(ctx, "This login is already taken.");
+                return;
+            }
+
             _users.Create(login, password, role);
         }
         catch (SqlException ex) when (SqlErrorMessages.IsUniqueKeyViolation(ex))

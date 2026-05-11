@@ -13,15 +13,24 @@ public sealed class DischargeService
         _assignments = assignments;
     }
 
-    public bool TryDischarge(int patientId, string finalDiagnosis)
+    public bool TryDischarge(int patientId, string finalDiagnosis, out string? error)
     {
         var hasOpen = _assignments.AnyOpenByPatient(patientId);
-        if (!CanDischarge(finalDiagnosis, hasOpen)) return false;
+        error = ValidateDischarge(finalDiagnosis, hasOpen);
+        if (error is not null) return false;
+
         _patients.Discharge(patientId, finalDiagnosis.Trim());
         return true;
     }
 
     public static bool CanDischarge(string finalDiagnosis, bool hasOpenAssignments)
-        => !string.IsNullOrWhiteSpace(finalDiagnosis) && !hasOpenAssignments;
+        => ValidateDischarge(finalDiagnosis, hasOpenAssignments) is null;
+
+    public static string? ValidateDischarge(string finalDiagnosis, bool hasOpenAssignments)
+    {
+        if (string.IsNullOrWhiteSpace(finalDiagnosis)) return "Final diagnosis is required.";
+        if (hasOpenAssignments) return "Complete all assignments before discharge.";
+        return null;
+    }
 }
 

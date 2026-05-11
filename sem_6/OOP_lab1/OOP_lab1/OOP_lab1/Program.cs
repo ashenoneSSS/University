@@ -3,10 +3,16 @@ using OOP_lab1.Http;
 using OOP_lab1.Sessions;
 using OOP_lab1.Services;
 using OOP_lab1.Controllers;
+using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+
 builder.Services.AddSingleton<DbConnectionFactory>();
+builder.Services.AddSingleton<DatabaseInitializer>();
 builder.Services.AddSingleton<UserDao>();
 builder.Services.AddSingleton<PatientDao>();
 builder.Services.AddSingleton<AssignmentDao>();
@@ -23,6 +29,15 @@ builder.Services.AddSingleton<AssignmentsController>();
 builder.Services.AddSingleton<DischargeService>();
 
 var app = builder.Build();
+
+try
+{
+    app.Services.GetRequiredService<DatabaseInitializer>().EnsureCreated();
+}
+catch (SqlException ex)
+{
+    app.Logger.LogError(ex, "Database initialization failed.");
+}
 
 var router = app.Services.GetRequiredService<Router>();
 router.Add("GET", "/", async ctx =>
@@ -55,6 +70,7 @@ router.Add("GET", "/patients/{id}", patients.Details);
 router.Add("GET", "/patients/{id}/edit", patients.EditGet);
 router.Add("POST", "/patients/{id}/edit", patients.EditPost);
 router.Add("POST", "/patients/{id}/delete", patients.DeletePost);
+router.Add("GET", "/patients/{id}/discharge", patients.DischargeGet);
 router.Add("POST", "/patients/{id}/discharge", patients.DischargePost);
 
 var assignments = app.Services.GetRequiredService<AssignmentsController>();

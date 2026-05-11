@@ -1,0 +1,286 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589B6FC-E515-4EF9-A6A3-2967B831C46D}|OOP_lab1.Tests\\OOP_lab1.Tests.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5589B6FC-E515-4EF9-A6A3-2967B831C46D}|OOP_lab1.Tests\\OOP_lab1.Tests.csproj|solutionrelative:oop_lab1.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\data\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\data\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\data\\patientdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\data\\patientdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\models\\sessiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\models\\sessiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\templates\\patient_details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\templates\\patient_details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\sql\\schema_and_seed.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\sql\\schema_and_seed.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\data\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\data\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\data\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\data\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|c:\\users\\ne_kazual\\desktop\\university\\sem_6\\oop_lab1\\oop_lab1\\oop_lab1\\sql\\schema_and_seed.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{715B1727-026F-4CF3-A4CC-DFF3290CC369}|OOP_lab1\\OOP_lab1.csproj|solutionrelative:oop_lab1\\sql\\schema_and_seed.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Data\\DatabaseInitializer.cs",
+              "RelativeDocumentMoniker": "OOP_lab1\\Data\\DatabaseInitializer.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Data\\DatabaseInitializer.cs",
+              "RelativeToolTip": "OOP_lab1\\Data\\DatabaseInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T05:53:03.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "OOP_lab1\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Services\\AuthService.cs",
+              "RelativeToolTip": "OOP_lab1\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T05:48:33.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "OOP_lab1.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "OOP_lab1.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwDUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T05:48:16.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "OOP_lab1\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "OOP_lab1\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T05:47:46.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PatientDao.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Data\\PatientDao.cs",
+              "RelativeDocumentMoniker": "OOP_lab1\\Data\\PatientDao.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Data\\PatientDao.cs",
+              "RelativeToolTip": "OOP_lab1\\Data\\PatientDao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T05:47:26.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SessionData.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Models\\SessionData.cs",
+              "RelativeDocumentMoniker": "OOP_lab1\\Models\\SessionData.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Models\\SessionData.cs",
+              "RelativeToolTip": "OOP_lab1\\Models\\SessionData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T05:45:42.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Models\\User.cs",
+              "RelativeDocumentMoniker": "OOP_lab1\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Models\\User.cs",
+              "RelativeToolTip": "OOP_lab1\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T05:45:41.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "OOP_lab1\\Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Models\\Patient.cs",
+              "RelativeToolTip": "OOP_lab1\\Models\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T05:45:37.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "patient_details.html",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Templates\\patient_details.html",
+              "RelativeDocumentMoniker": "OOP_lab1\\Templates\\patient_details.html",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Templates\\patient_details.html",
+              "RelativeToolTip": "OOP_lab1\\Templates\\patient_details.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-11T05:45:24.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "schema_and_seed.sql ",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\sql\\schema_and_seed.sql",
+              "RelativeDocumentMoniker": "OOP_lab1\\sql\\schema_and_seed.sql",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\sql\\schema_and_seed.sql",
+              "RelativeToolTip": "OOP_lab1\\sql\\schema_and_seed.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-11T04:49:54.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\appsettings.json",
+              "RelativeDocumentMoniker": "OOP_lab1\\appsettings.json",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\appsettings.json",
+              "RelativeToolTip": "OOP_lab1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-11T04:49:17.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DbConnectionFactory.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Data\\DbConnectionFactory.cs",
+              "RelativeDocumentMoniker": "OOP_lab1\\Data\\DbConnectionFactory.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Data\\DbConnectionFactory.cs",
+              "RelativeToolTip": "OOP_lab1\\Data\\DbConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T04:36:58.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserDao.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Data\\UserDao.cs",
+              "RelativeDocumentMoniker": "OOP_lab1\\Data\\UserDao.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Data\\UserDao.cs",
+              "RelativeToolTip": "OOP_lab1\\Data\\UserDao.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T04:36:41.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "OOP_lab1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "OOP_lab1\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-10T21:46:39.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Program.cs",
+              "RelativeDocumentMoniker": "OOP_lab1\\Program.cs",
+              "ToolTip": "C:\\Users\\ne_kazual\\Desktop\\University\\sem_6\\OOP_lab1\\OOP_lab1\\OOP_lab1\\Program.cs",
+              "RelativeToolTip": "OOP_lab1\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAE0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T21:46:39.686Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

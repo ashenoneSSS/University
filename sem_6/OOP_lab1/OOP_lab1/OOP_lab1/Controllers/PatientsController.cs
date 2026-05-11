@@ -140,6 +140,13 @@ public sealed class PatientsController
             items.Append("</li>");
         }
 
+        var pageError = ctx.Http.Request.Query.TryGetValue("error", out var errorValues)
+            ? errorValues.ToString()
+            : "";
+        var errorHtml = string.IsNullOrWhiteSpace(pageError)
+            ? ""
+            : "<div style=\"color: #b00020\">" + Html(pageError) + "</div>";
+
         var doctorActions = "";
         if (ctx.Session is not null && RoleRules.IsDoctor(ctx.Session.Role))
         {
@@ -176,7 +183,8 @@ public sealed class PatientsController
             ["doctor_actions"] = doctorActions,
             ["assignments"] = items.ToString(),
             ["assignment_add_form"] = assignmentAdd,
-            ["discharge_form"] = dischargeForm
+            ["discharge_form"] = dischargeForm,
+            ["error"] = errorHtml
         });
 
         ctx.Http.Response.ContentType = "text/html; charset=utf-8";
@@ -274,6 +282,20 @@ public sealed class PatientsController
         ctx.Http.Response.Headers.Location = "/patients";
     }
 
+    public Task DischargeGet(RequestContext ctx)
+    {
+        if (!ctx.RouteValues.TryGetValue("id", out var idStr) || !int.TryParse(idStr, out var id))
+        {
+            ctx.Http.Response.StatusCode = StatusCodes.Status302Found;
+            ctx.Http.Response.Headers.Location = "/patients";
+            return Task.CompletedTask;
+        }
+
+        ctx.Http.Response.StatusCode = StatusCodes.Status302Found;
+        ctx.Http.Response.Headers.Location = "/patients/" + id;
+        return Task.CompletedTask;
+    }
+
     public async Task DischargePost(RequestContext ctx)
     {
         if (!RoleRules.IsDoctor(ctx.Session!.Role))
@@ -292,10 +314,10 @@ public sealed class PatientsController
 
         var form = await ctx.Http.Request.ReadFormAsync();
         var finalDiagnosis = (string?)form["final_diagnosis"];
-        if (!_discharge.TryDischarge(id, finalDiagnosis ?? ""))
+        if (!_discharge.TryDischarge(id, finalDiagnosis ?? "", out var error))
         {
-            ctx.Http.Response.StatusCode = StatusCodes.Status400BadRequest;
-            await ctx.Http.Response.WriteAsync("Bad request");
+            ctx.Http.Response.StatusCode = StatusCodes.Status302Found;
+            ctx.Http.Response.Headers.Location = "/patients/" + id + "?error=" + Uri.EscapeDataString(error ?? "Patient cannot be discharged.");
             return;
         }
 

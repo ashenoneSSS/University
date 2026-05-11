@@ -59,5 +59,8 @@ public sealed class DischargeLogicTests
         Assert.False(DischargeService.CanDischarge("", hasOpenAssignments: false));
         Assert.False(DischargeService.CanDischarge("ok", hasOpenAssignments: true));
         Assert.True(DischargeService.CanDischarge("ok", hasOpenAssignments: false));
+        Assert.Equal("Final diagnosis is required.", DischargeService.ValidateDischarge("", hasOpenAssignments: false));
+        Assert.Equal("Complete all assignments before discharge.", DischargeService.ValidateDischarge("ok", hasOpenAssignments: true));
+        Assert.Null(DischargeService.ValidateDischarge("ok", hasOpenAssignments: false));
     }
 }
