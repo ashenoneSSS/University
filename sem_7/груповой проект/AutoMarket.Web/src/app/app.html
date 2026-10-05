@@ -1,0 +1,35 @@
+<header class="header">
+  <div class="container header-inner">
+    <a routerLink="/" class="logo">Auto<span>Market</span></a>
+    <nav class="nav">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Головна</a>
+      @if (auth.isLoggedIn()) {
+        <a routerLink="/create" routerLinkActive="active">Створити оголошення</a>
+        <a routerLink="/my" routerLinkActive="active">Мої оголошення</a>
+        <a routerLink="/favorites" routerLinkActive="active">Обране</a>
+        @if (auth.isAdmin()) {
+          <a routerLink="/admin" routerLinkActive="active">Адмін-панель</a>
+        }
+      }
+    </nav>
+    <div class="user">
+      @if (auth.user(); as u) {
+        <span class="user-name">{{ u.name }}@if (auth.isAdmin()) { <small> (адмін)</small> }</span>
+        <button class="btn btn-outline" (click)="auth.logout()">Вийти</button>
+      } @else {
+        <a class="btn btn-outline" routerLink="/login">Увійти</a>
+        <a class="btn btn-primary" routerLink="/register">Реєстрація</a>
+      }
+    </div>
+  </div>
+</header>
+
+<main class="container main">
+  <router-outlet />
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <b>AutoMarket</b> — дошка оголошень б/у техніки та авто · Груповий проєкт, 2026
+  </div>
+</footer>

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="900" viewBox="0 0 1540 900">
+<defs><marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#d03a2f"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="770.0" y="50" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#000">AutoMarket — ER Diagram</text>
+<line x1="460" y1="170" x2="556" y2="170" stroke="#d03a2f" stroke-width="4" marker-end="url(#head)"/>
+<rect x="484.0" y="125" width="52" height="28" rx="4" fill="#fff" stroke="#d03a2f" stroke-width="2"/>
+<text x="510.0" y="146" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#d03a2f">1:N</text>
+<line x1="1080" y1="170" x2="984" y2="170" stroke="#d03a2f" stroke-width="4" marker-end="url(#head)"/>
+<rect x="1004.0" y="125" width="52" height="28" rx="4" fill="#fff" stroke="#d03a2f" stroke-width="2"/>
+<text x="1030.0" y="146" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#d03a2f">1:N</text>
+<line x1="560" y1="560" x2="464" y2="560" stroke="#d03a2f" stroke-width="4" marker-end="url(#head)"/>
+<rect x="484.0" y="515" width="52" height="28" rx="4" fill="#fff" stroke="#d03a2f" stroke-width="2"/>
+<text x="510.0" y="536" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#d03a2f">1:N</text>
+<line x1="980" y1="660" x2="1076" y2="660" stroke="#d03a2f" stroke-width="4" marker-end="url(#head)"/>
+<rect x="1004.0" y="615" width="52" height="28" rx="4" fill="#fff" stroke="#d03a2f" stroke-width="2"/>
+<text x="1030.0" y="636" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#d03a2f">1:N</text>
+<line x1="1290.0" y1="470" x2="1290.0" y2="586" stroke="#d03a2f" stroke-width="4" marker-end="url(#head)"/>
+<rect x="1314.0" y="515.0" width="52" height="28" rx="4" fill="#fff" stroke="#d03a2f" stroke-width="2"/>
+<text x="1340.0" y="536.0" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#d03a2f">1:N</text>
+<rect x="40" y="90" width="420" height="156" rx="7" fill="#eef4fd" stroke="#26398a" stroke-width="4"/>
+<path d="M40 97 a7 7 0 0 1 7 -7 h406 a7 7 0 0 1 7 7 v39 h-420 z" fill="#3b63e0" stroke="#26398a" stroke-width="4"/>
+<text x="250.0" y="121" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">CATEGORY</text>
+<text x="58" y="160" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">PK</text>
+<text x="120" y="160" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">Id</text>
+<text x="290" y="160" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">int</text>
+<text x="120" y="192" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Name</text>
+<text x="290" y="192" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string</text>
+<text x="120" y="224" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">Listings</text>
+<text x="290" y="224" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">List&lt;Listing&gt;</text>
+<rect x="560" y="90" width="420" height="604" rx="7" fill="#eef4fd" stroke="#26398a" stroke-width="4"/>
+<path d="M560 97 a7 7 0 0 1 7 -7 h406 a7 7 0 0 1 7 7 v39 h-420 z" fill="#3b63e0" stroke="#26398a" stroke-width="4"/>
+<text x="770.0" y="121" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">LISTING</text>
+<text x="578" y="160" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">PK</text>
+<text x="640" y="160" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">Id</text>
+<text x="810" y="160" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">int</text>
+<text x="640" y="192" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Title</text>
+<text x="810" y="192" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string</text>
+<text x="640" y="224" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Description</text>
+<text x="810" y="224" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string</text>
+<text x="640" y="256" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Price</text>
+<text x="810" y="256" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">decimal</text>
+<text x="640" y="288" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">City</text>
+<text x="810" y="288" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string?</text>
+<text x="640" y="320" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Status</text>
+<text x="810" y="320" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">ListingStatus</text>
+<text x="640" y="352" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">RejectReason</text>
+<text x="810" y="352" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string?</text>
+<text x="640" y="384" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Views</text>
+<text x="810" y="384" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">int</text>
+<text x="640" y="416" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">SearchText</text>
+<text x="810" y="416" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string</text>
+<text x="640" y="448" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">CityKey</text>
+<text x="810" y="448" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string?</text>
+<text x="640" y="480" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">CreatedAt</text>
+<text x="810" y="480" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">DateTime</text>
+<text x="640" y="512" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">UpdatedAt</text>
+<text x="810" y="512" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">DateTime?</text>
+<text x="578" y="544" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">FK</text>
+<text x="640" y="544" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">UserId</text>
+<text x="810" y="544" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">int</text>
+<text x="640" y="576" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">User</text>
+<text x="810" y="576" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">User</text>
+<text x="578" y="608" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">FK</text>
+<text x="640" y="608" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">CategoryId</text>
+<text x="810" y="608" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">int</text>
+<text x="640" y="640" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">Category</text>
+<text x="810" y="640" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">Category</text>
+<text x="640" y="672" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">Photos</text>
+<text x="810" y="672" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">List&lt;Photo&gt;</text>
+<rect x="1080" y="90" width="420" height="380" rx="7" fill="#eef4fd" stroke="#26398a" stroke-width="4"/>
+<path d="M1080 97 a7 7 0 0 1 7 -7 h406 a7 7 0 0 1 7 7 v39 h-420 z" fill="#3b63e0" stroke="#26398a" stroke-width="4"/>
+<text x="1290.0" y="121" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">USER</text>
+<text x="1098" y="160" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">PK</text>
+<text x="1160" y="160" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">Id</text>
+<text x="1330" y="160" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">int</text>
+<text x="1160" y="192" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Email</text>
+<text x="1330" y="192" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string</text>
+<text x="1160" y="224" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">PasswordHash</text>
+<text x="1330" y="224" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string</text>
+<text x="1160" y="256" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Name</text>
+<text x="1330" y="256" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string</text>
+<text x="1160" y="288" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Phone</text>
+<text x="1330" y="288" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string?</text>
+<text x="1160" y="320" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Role</text>
+<text x="1330" y="320" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">UserRole</text>
+<text x="1160" y="352" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">IsBlocked</text>
+<text x="1330" y="352" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">bool</text>
+<text x="1160" y="384" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">CreatedAt</text>
+<text x="1330" y="384" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">DateTime</text>
+<text x="1160" y="416" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">Listings</text>
+<text x="1330" y="416" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">List&lt;Listing&gt;</text>
+<text x="1160" y="448" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">Favorites</text>
+<text x="1330" y="448" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">List&lt;Favorite&gt;</text>
+<rect x="40" y="470" width="420" height="188" rx="7" fill="#eef4fd" stroke="#26398a" stroke-width="4"/>
+<path d="M40 477 a7 7 0 0 1 7 -7 h406 a7 7 0 0 1 7 7 v39 h-420 z" fill="#3b63e0" stroke="#26398a" stroke-width="4"/>
+<text x="250.0" y="501" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">PHOTO</text>
+<text x="58" y="540" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">PK</text>
+<text x="120" y="540" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">Id</text>
+<text x="290" y="540" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">int</text>
+<text x="120" y="572" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">Url</text>
+<text x="290" y="572" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">string</text>
+<text x="58" y="604" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">FK</text>
+<text x="120" y="604" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">ListingId</text>
+<text x="290" y="604" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">int</text>
+<text x="120" y="636" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">Listing</text>
+<text x="290" y="636" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">Listing</text>
+<rect x="1080" y="590" width="420" height="220" rx="7" fill="#eef4fd" stroke="#26398a" stroke-width="4"/>
+<path d="M1080 597 a7 7 0 0 1 7 -7 h406 a7 7 0 0 1 7 7 v39 h-420 z" fill="#3b63e0" stroke="#26398a" stroke-width="4"/>
+<text x="1290.0" y="621" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#fff">FAVORITE</text>
+<text x="1098" y="660" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">PK<tspan fill="#047857">,FK</tspan></text>
+<text x="1160" y="660" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">UserId</text>
+<text x="1330" y="660" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">int</text>
+<text x="1098" y="692" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#b45309">PK<tspan fill="#047857">,FK</tspan></text>
+<text x="1160" y="692" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">ListingId</text>
+<text x="1330" y="692" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#047857">int</text>
+<text x="1160" y="724" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">CreatedAt</text>
+<text x="1330" y="724" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#111827">DateTime</text>
+<text x="1160" y="756" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">User</text>
+<text x="1330" y="756" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">User</text>
+<text x="1160" y="788" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">Listing</text>
+<text x="1330" y="788" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15" fill="#6d28d9">Listing</text>
+<rect x="40" y="700" width="380" height="172" rx="4" fill="#fff" stroke="#c7c7c7" stroke-width="1.5"/>
+<rect x="54" y="712" width="22" height="20" fill="#3b63e0"/>
+<text x="100" y="728" font-family="'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#111827">Сутність / таблиця</text>
+<text x="52" y="761" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" font-style="italic" fill="#b45309">PK</text>
+<text x="100" y="760" font-family="'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#111827">Первинний ключ</text>
+<text x="52" y="793" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" font-style="italic" fill="#047857">FK</text>
+<text x="100" y="792" font-family="'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#111827">Зовнішній ключ (колонка в БД)</text>
+<text x="56" y="826" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" font-style="italic" fill="#6d28d9">N</text>
+<text x="100" y="824" font-family="'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#111827">Навігаційна властивість (лише EF)</text>
+<line x1="50" y1="850" x2="84" y2="850" stroke="#d03a2f" stroke-width="4"/>
+<text x="100" y="856" font-family="'Helvetica Neue', Arial, sans-serif" font-size="17" fill="#111827">Зв'язок 1:N</text>
+</svg>
