@@ -1,0 +1,16 @@
+cabal-version:      2.4
+name:               fp-lab1
+version:            1.0.0
+synopsis:           Інформаційна система "Програмне забезпечення на мережі факультету"
+build-type:         Simple
+
+executable faculty-software
+    main-is:          Main.hs
+    hs-source-dirs:   app, src
+    other-modules:    Types, Entity, Pretty, Editable, Input, Search, Db
+    build-depends:    base >=4.14 && <5,
+                      mysql-simple >=0.4.9,
+                      mysql >=0.2,
+                      time
+    default-language: Haskell2010
+    ghc-options:      -Wall
